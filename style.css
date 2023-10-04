@@ -1,0 +1,609 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+/* Navbar ------------------------------- */
+
+.Mobile__nav {
+  width: 70vw;
+  height: 1100%;
+  position: absolute;
+  background-color: white;
+  z-index: 99;
+  padding: 20px;
+  display: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.mobile-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.Mobile__nav-links {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.Mobile__nav-links a{
+  text-decoration: none;
+}
+
+.Mobile__nav-links:hover {
+  color: green;
+}
+
+@media (min-width: 768px) {
+  .Mobile__nav {
+    display: none !important;
+  }
+}
+
+
+/* -------------------------------------------------header--------------------------------------------- */
+
+.header {
+  height: 80px;
+  width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 12vw;
+  padding-top: 20px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+.header___nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.header__nav-links {
+  font-size: 16px;
+  list-style: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+
+.header__nav-links:hover {
+  color: green;
+}
+
+.account__img {
+  cursor: pointer;
+}
+
+.menu__icon {
+  display: none;
+}
+
+
+@media (max-width: 1024px) {
+  .header__left {
+    display: none;
+  }
+
+  .menu__icon {
+    display: block;
+  }
+
+  .header__nav {
+    padding-inline: 8vw !important;
+  }
+}
+
+
+/* Banner-1----------------------------------------------------------*/
+.banner1 {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.banner1:hover {
+  transform: scale(1.02);
+}
+
+.banner1 img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  flex-shrink: 0;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.banner1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 1, 2, 0) 100%
+  );
+  z-index: 1;
+}
+
+.banner1 div {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 120px;
+  left: 80px;
+  width: 100%;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.banner1 p {
+  margin: 5px 0;
+}
+
+.banner1 h2 {
+  width: 30%;
+  font-size: 40px;
+}
+
+/* Search for recipes------------------------ */
+
+.searchs {
+  margin: auto;
+  width: 90%;
+  margin-top: 3%;
+}
+
+.searchs div {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.searchs input[type="search"] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.searchs ion-icon[name="search-outline"] {
+  background-color: green;
+  color: white;
+  padding: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* OPtions------------------------------------*/
+
+.Options {
+  margin: auto;
+  width: 90%;
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5%;
+  justify-content: flex-start;
+}
+
+.Options div {
+  width: 23%;
+  padding: 3% 2%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform-origin: center;
+}
+
+.Options div:nth-child(1) {
+  background-color: rgb(234, 170, 0);
+}
+
+.Options div:nth-child(2) {
+  background-color: rgb(196, 214, 0);
+}
+
+.Options div:nth-child(3) {
+  background-color: rgb(220, 88, 42);
+}
+
+.Options div:nth-child(1):hover {
+  background-color: rgb(234, 187, 55);
+  transform: scale(1.05);
+}
+
+.Options div:nth-child(2):hover {
+  background-color: rgb(223, 236, 79);
+  transform: scale(1.05);
+}
+
+.Options div:nth-child(3):hover {
+  background-color: rgb(238, 111, 65);
+  transform: scale(1.05);
+}
+
+.Options ion-icon[name="chevron-forward-outline"] {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* --------------------------Recipes----------------------------- */
+.Recipes {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  margin-top: 3%;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.Recipes .filtering {
+  width: 20%;
+  padding: 3px;
+  
+}
+
+.Recipes .filtering div div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+.Recipes .filtering h3 {
+  font-size: 18px;
+  margin-bottom: 20%;
+  font-weight: bold;
+}
+
+.Recipes .filtering div p {
+  font-weight: 500;
+}
+
+.Recipes .filtering div {
+  margin-top: 5px;
+}
+
+.Recipes .filtering input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid green;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Recipes .filtering input[type="radio"]:checked::before {
+  content: "\2713";
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  display: block;
+  text-align: center;
+  line-height: 17px;
+}
+
+.Recipes .items {
+  width: 75%;
+}
+
+/* JS CSS----------*/
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+}
+
+.card .Bottom {
+  margin-top: 1px;
+  padding: 3px 10px;
+}
+
+.card .Bottom .box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .box1 h3 {
+  font-size: 1.3rem;
+  color: #dc582a;
+  margin: 10px 0;
+}
+
+.card .Bottom p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.card .Bottom .box1 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+.card .Bottom ion-icon {
+  font-size: 24px;
+}
+
+/*Footer-------------------- */
+footer {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  padding: 2rem 0;
+  font-size: 16px;
+  display: flex;
+  gap: 10%;
+  justify-content: space-evenly;
+}
+
+footer div {
+  padding: 1rem 0px;
+}
+
+footer div:nth-child(1) {
+  width: 45%;
+}
+
+footer div:nth-child(1) p {
+  width: 70%;
+  font-size: large;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+footer div img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+footer div p {
+  margin-bottom: 1rem;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 3;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  color: darkgreen;
+  font-weight: 500;
+}
+
+footer div:nth-child(4) div {
+  display: flex;
+  align-items: center;
+}
+
+footer div:nth-child(4) input[type="search"] {
+  padding: 10px 30px 10px 10px;
+  border: none;
+  margin-right: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+  background-image: url("./Images/@.svg");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+ion-icon[name="at-outline"] {
+  font-size: 24px;
+  color: #3498db;
+}
+
+button {
+  background-color: #089204;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0bb905;
+}
+
+@media (max-width: 850px) {
+  /* Recepies---------------------------------- */
+  .Recipes {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .Recipes .filtering {
+    width: 40%;
+    }
+
+  .Recipes .filtering h3 {
+    font-size: 18px;
+    margin-bottom: 1%;
+    font-weight: bold;
+  }
+
+  .Recipes .items {
+    width: 100%;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 20px; */
+  }
+
+  .card {
+    /* width: 100%; */
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Fotter part screening----------------------- */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  footer div:nth-child(1),
+  footer div:nth-child(1) p {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer div {
+    flex: none;
+    margin: 0;
+  }
+
+  footer h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 630px) {
+  /* Recepies---------------------------------- */
+  .Recipes {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  .Recipes .filtering {
+    width: 40%;
+    }
+
+  .Recipes .filtering h3 {
+    font-size: 18px;
+    margin-bottom: 1%;
+    font-weight: bold;
+  }
+
+  .Recipes .items {
+    width: 100%;  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 20px; */
+  }
+}
+
+
+/* Socials------------------------------------ */
+.socials {
+  text-align: center;
+  margin-bottom: 3%;
+}
+.socials ion-icon {
+  background-color: black;
+  font-size: larger;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}

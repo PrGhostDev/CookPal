@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookpal</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    
+    <!-- NavBar--------------------------------------->
+    <nav class="Mobile__nav">
+      <div class="mobile-row">
+        <div class="Mobile__right">
+          <img src="./Images/Cookpal 1.png" alt="logo" class="Mobile__logo" />
+        </div>
+        <div class="account__img">
+          <img src="./Images/Ellipse 2.png" alt="" />
+        </div>
+      </div>
+      <div class="Mobile__left">
+        <ul class="Mobile___nav-ul">
+          <li class="Mobile__nav-links">
+            <a href="#home" id="HomeNav">Home</a>
+          </li>
+          <li class="Mobile__nav-links">
+            <a href="#explore" id="ExploreNav">Explore</a>
+          </li>
+          <li class="Mobile__nav-links">
+            <a href="#help" id="HelpNav">Help</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <!--------------------------------------------- header started----------------------------------- -->
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__right">
+          <img src="./Images/Cookpal 1.png" alt="logo" class="header__logo" />
+        </div>
+        <div class="header__left">
+          <ul class="header___nav-ul">
+            <li class="header__nav-links"><a href="#home">Home</a></li>
+            <li class="header__nav-links"><a href="#explore">Explore</a></li>
+            <li class="header__nav-links"><a href="#help">Help</a></li>
+          </ul>
+          <div class="account__img">
+            <img src="./Images/Ellipse 2.png" alt="" />
+          </div>
+        </div>
+        <div class="menu__icon">
+          <img src="./Images/menu.png" alt="menubar" />
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Banner1-------------------------------------- -->
+
+    <section class="banner1">
+      <img src="./Images/banner1.jpg" alt="" srcset="" />
+      <div>
+        <p style="color: orangered">Trending now</p>
+        <h2>Mike's famous salad with cheese</h2>
+        <p>By John Mike</p>
+      </div>
+    </section>
+
+    <!-- Search--------------------------------------------------->
+    <section class="searchs">
+      <h1>Search For Recipes</h1>
+      <div>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="🔍 Search for recipes..."
+        />
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+    </section>
+
+    <!-- Options-------------------------------->
+    <section class="Options">
+      <div id="all-recipes">
+        <p>Show All</p>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+      <div id="veg-recipes">
+        <p>Show Only Veg</p>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+      <div id="non-veg-recipes">
+        <p>Show Only Non-Veg</p>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+    </section>
+
+    <!-- --------------------Recipes------------------------------------- -->
+    <section class="Recipes">
+      <div class="filtering">
+        <h3>Filters</h3>
+        <div class="filter">
+          <p>Rating</p>
+          <div>
+            <input
+              type="radio"
+              id="above-four"
+              name="rating-filter"
+              value="above-four"
+            />
+            <label for="above-four">4 and Above</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="below-four"
+              name="rating-filter"
+              value="below-four"
+            />
+            <label for="below-four">Below 4</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="items">
+        <!-- This is all done is JS---------------------- -->
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------- -->
+    <!-- Fotter------------------------------- -->
+    <footer>
+      <div>
+        <img src="./Images/Logo.jpg" alt="" />
+        <p>
+          Cookpal is a recipe website with a wide variety of delicious recipes,
+          easy-to-use search function. Join our community and let's cook
+          together!
+        </p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li>Home</li>
+          <li>Explore</li>
+          <li>Team</li>
+          <li>About us</li>
+          <li>Activity</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li>Blog</li>
+          <li>Use Cases</li>
+          <li>Testimonials</li>
+          <li>Insights</li>
+        </ul>
+      </div>
+      <div>
+        <img src="./Images/Logo.jpg" alt="" />
+        <p>
+          Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan
+          aliquam.
+        </p>
+        <div>
+          <input type="search" placeholder="Your Email" />
+          <!-- <ion-icon
+            name="at-outline"
+          ></ion-icon> -->
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- connect on------------------------>
+    <div class="socials">
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-linkedin"></ion-icon>
+      <ion-icon name="logo-facebook"></ion-icon>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
